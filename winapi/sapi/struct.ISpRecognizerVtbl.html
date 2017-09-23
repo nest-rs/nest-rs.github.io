@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ISpRecognizerVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ISpRecognizerVtbl">
+
+    <title>winapi::sapi::ISpRecognizerVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ISpRecognizerVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a></p><script>window.sidebarCurrent = {name: 'ISpRecognizerVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a>::<wbr><a class="struct" href=''>ISpRecognizerVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ISpRecognizerVtbl {
+    pub parent: <a class="struct" href="../../winapi/sapi/struct.ISpPropertiesVtbl.html" title="struct winapi::sapi::ISpPropertiesVtbl">ISpPropertiesVtbl</a>,
+    pub SetRecognizer: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetRecognizer: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetInput: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a>, _: <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetInputObjectToken: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetInputStream: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpStreamFormat.html" title="struct winapi::sapi::ISpStreamFormat">ISpStreamFormat</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub CreateRecoContext: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecoContext.html" title="struct winapi::sapi::ISpRecoContext">ISpRecoContext</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetRecoProfile: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetRecoProfile: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub IsSharedInstance: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetRecoState: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.SPRECOSTATE.html" title="struct winapi::sapi::SPRECOSTATE">SPRECOSTATE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetRecoState: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="struct" href="../../winapi/sapi/struct.SPRECOSTATE.html" title="struct winapi::sapi::SPRECOSTATE">SPRECOSTATE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetStatus: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.SPRECOGNIZERSTATUS.html" title="struct winapi::sapi::SPRECOGNIZERSTATUS">SPRECOGNIZERSTATUS</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/sapi/type.SPSTREAMFORMATTYPE.html" title="type winapi::sapi::SPSTREAMFORMATTYPE">SPSTREAMFORMATTYPE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/guiddef/struct.GUID.html" title="struct winapi::guiddef::GUID">GUID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub IsUISupported: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub DisplayUI: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/windef/type.HWND.html" title="type winapi::windef::HWND">HWND</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub EmulateRecognition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpPhrase.html" title="struct winapi::sapi::ISpPhrase">ISpPhrase</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/sapi/struct.ISpPropertiesVtbl.html" title="struct winapi::sapi::ISpPropertiesVtbl">ISpPropertiesVtbl</a></code>
+                           </span></span><span id='structfield.SetRecognizer' class="structfield">
+                           <span id='SetRecognizer.v' class='invisible'>
+                           <code>SetRecognizer: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetRecognizer' class="structfield">
+                           <span id='GetRecognizer.v' class='invisible'>
+                           <code>GetRecognizer: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetInput' class="structfield">
+                           <span id='SetInput.v' class='invisible'>
+                           <code>SetInput: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a>, _: <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetInputObjectToken' class="structfield">
+                           <span id='GetInputObjectToken.v' class='invisible'>
+                           <code>GetInputObjectToken: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetInputStream' class="structfield">
+                           <span id='GetInputStream.v' class='invisible'>
+                           <code>GetInputStream: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpStreamFormat.html" title="struct winapi::sapi::ISpStreamFormat">ISpStreamFormat</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.CreateRecoContext' class="structfield">
+                           <span id='CreateRecoContext.v' class='invisible'>
+                           <code>CreateRecoContext: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecoContext.html" title="struct winapi::sapi::ISpRecoContext">ISpRecoContext</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetRecoProfile' class="structfield">
+                           <span id='GetRecoProfile.v' class='invisible'>
+                           <code>GetRecoProfile: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetRecoProfile' class="structfield">
+                           <span id='SetRecoProfile.v' class='invisible'>
+                           <code>SetRecoProfile: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpObjectToken.html" title="struct winapi::sapi::ISpObjectToken">ISpObjectToken</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.IsSharedInstance' class="structfield">
+                           <span id='IsSharedInstance.v' class='invisible'>
+                           <code>IsSharedInstance: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetRecoState' class="structfield">
+                           <span id='GetRecoState.v' class='invisible'>
+                           <code>GetRecoState: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.SPRECOSTATE.html" title="struct winapi::sapi::SPRECOSTATE">SPRECOSTATE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetRecoState' class="structfield">
+                           <span id='SetRecoState.v' class='invisible'>
+                           <code>SetRecoState: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="struct" href="../../winapi/sapi/struct.SPRECOSTATE.html" title="struct winapi::sapi::SPRECOSTATE">SPRECOSTATE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetStatus' class="structfield">
+                           <span id='GetStatus.v' class='invisible'>
+                           <code>GetStatus: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.SPRECOGNIZERSTATUS.html" title="struct winapi::sapi::SPRECOGNIZERSTATUS">SPRECOGNIZERSTATUS</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetFormat' class="structfield">
+                           <span id='GetFormat.v' class='invisible'>
+                           <code>GetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/sapi/type.SPSTREAMFORMATTYPE.html" title="type winapi::sapi::SPSTREAMFORMATTYPE">SPSTREAMFORMATTYPE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/guiddef/struct.GUID.html" title="struct winapi::guiddef::GUID">GUID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.IsUISupported' class="structfield">
+                           <span id='IsUISupported.v' class='invisible'>
+                           <code>IsUISupported: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.DisplayUI' class="structfield">
+                           <span id='DisplayUI.v' class='invisible'>
+                           <code>DisplayUI: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="type" href="../../winapi/windef/type.HWND.html" title="type winapi::windef::HWND">HWND</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.EmulateRecognition' class="structfield">
+                           <span id='EmulateRecognition.v' class='invisible'>
+                           <code>EmulateRecognition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpRecognizer.html" title="struct winapi::sapi::ISpRecognizer">ISpRecognizer</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpPhrase.html" title="struct winapi::sapi::ISpPhrase">ISpPhrase</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

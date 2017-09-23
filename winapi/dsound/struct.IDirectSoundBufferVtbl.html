@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `IDirectSoundBufferVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, IDirectSoundBufferVtbl">
+
+    <title>winapi::dsound::IDirectSoundBufferVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct IDirectSoundBufferVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>dsound</a></p><script>window.sidebarCurrent = {name: 'IDirectSoundBufferVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>dsound</a>::<wbr><a class="struct" href=''>IDirectSoundBufferVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct IDirectSoundBufferVtbl {
+    pub parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a>,
+    pub GetCaps: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/dsound/type.LPDSBCAPS.html" title="type winapi::dsound::LPDSBCAPS">LPDSBCAPS</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetCurrentPosition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/mmsystem/type.LPWAVEFORMATEX.html" title="type winapi::mmsystem::LPWAVEFORMATEX">LPWAVEFORMATEX</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetVolume: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPLONG.html" title="type winapi::minwindef::LPLONG">LPLONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetPan: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPLONG.html" title="type winapi::minwindef::LPLONG">LPLONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetStatus: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Initialize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/dsound/type.LPDIRECTSOUND.html" title="type winapi::dsound::LPDIRECTSOUND">LPDIRECTSOUND</a>, _: <a class="type" href="../../winapi/dsound/type.LPCDSBUFFERDESC.html" title="type winapi::dsound::LPCDSBUFFERDESC">LPCDSBUFFERDESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Lock: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Play: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetCurrentPosition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/mmsystem/type.LPCWAVEFORMATEX.html" title="type winapi::mmsystem::LPCWAVEFORMATEX">LPCWAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetVolume: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetPan: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Stop: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Unlock: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Restore: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a></code>
+                           </span></span><span id='structfield.GetCaps' class="structfield">
+                           <span id='GetCaps.v' class='invisible'>
+                           <code>GetCaps: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/dsound/type.LPDSBCAPS.html" title="type winapi::dsound::LPDSBCAPS">LPDSBCAPS</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetCurrentPosition' class="structfield">
+                           <span id='GetCurrentPosition.v' class='invisible'>
+                           <code>GetCurrentPosition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetFormat' class="structfield">
+                           <span id='GetFormat.v' class='invisible'>
+                           <code>GetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/mmsystem/type.LPWAVEFORMATEX.html" title="type winapi::mmsystem::LPWAVEFORMATEX">LPWAVEFORMATEX</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetVolume' class="structfield">
+                           <span id='GetVolume.v' class='invisible'>
+                           <code>GetVolume: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPLONG.html" title="type winapi::minwindef::LPLONG">LPLONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetPan' class="structfield">
+                           <span id='GetPan.v' class='invisible'>
+                           <code>GetPan: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPLONG.html" title="type winapi::minwindef::LPLONG">LPLONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetFrequency' class="structfield">
+                           <span id='GetFrequency.v' class='invisible'>
+                           <code>GetFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetStatus' class="structfield">
+                           <span id='GetStatus.v' class='invisible'>
+                           <code>GetStatus: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Initialize' class="structfield">
+                           <span id='Initialize.v' class='invisible'>
+                           <code>Initialize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/dsound/type.LPDIRECTSOUND.html" title="type winapi::dsound::LPDIRECTSOUND">LPDIRECTSOUND</a>, _: <a class="type" href="../../winapi/dsound/type.LPCDSBUFFERDESC.html" title="type winapi::dsound::LPCDSBUFFERDESC">LPCDSBUFFERDESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Lock' class="structfield">
+                           <span id='Lock.v' class='invisible'>
+                           <code>Lock: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.LPDWORD.html" title="type winapi::minwindef::LPDWORD">LPDWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Play' class="structfield">
+                           <span id='Play.v' class='invisible'>
+                           <code>Play: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetCurrentPosition' class="structfield">
+                           <span id='SetCurrentPosition.v' class='invisible'>
+                           <code>SetCurrentPosition: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetFormat' class="structfield">
+                           <span id='SetFormat.v' class='invisible'>
+                           <code>SetFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/mmsystem/type.LPCWAVEFORMATEX.html" title="type winapi::mmsystem::LPCWAVEFORMATEX">LPCWAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetVolume' class="structfield">
+                           <span id='SetVolume.v' class='invisible'>
+                           <code>SetVolume: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetPan' class="structfield">
+                           <span id='SetPan.v' class='invisible'>
+                           <code>SetPan: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetFrequency' class="structfield">
+                           <span id='SetFrequency.v' class='invisible'>
+                           <code>SetFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Stop' class="structfield">
+                           <span id='Stop.v' class='invisible'>
+                           <code>Stop: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Unlock' class="structfield">
+                           <span id='Unlock.v' class='invisible'>
+                           <code>Unlock: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>, _: <a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Restore' class="structfield">
+                           <span id='Restore.v' class='invisible'>
+                           <code>Restore: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dsound/struct.IDirectSoundBuffer.html" title="struct winapi::dsound::IDirectSoundBuffer">IDirectSoundBuffer</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

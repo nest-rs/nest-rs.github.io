@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `URL_COMPONENTS` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, URL_COMPONENTS">
+
+    <title>winapi::winhttp::URL_COMPONENTS - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct URL_COMPONENTS</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>winhttp</a></p><script>window.sidebarCurrent = {name: 'URL_COMPONENTS', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>winhttp</a>::<wbr><a class="struct" href=''>URL_COMPONENTS</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#264-266' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct URL_COMPONENTS {
+    pub dwStructSize: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub lpszScheme: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwSchemeLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub nScheme: <a class="type" href="../../winapi/winhttp/type.INTERNET_SCHEME.html" title="type winapi::winhttp::INTERNET_SCHEME">INTERNET_SCHEME</a>,
+    pub lpszHostName: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwHostNameLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub nPort: <a class="type" href="../../winapi/winhttp/type.INTERNET_PORT.html" title="type winapi::winhttp::INTERNET_PORT">INTERNET_PORT</a>,
+    pub lpszUserName: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwUserNameLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub lpszPassword: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwPasswordLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub lpszUrlPath: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwUrlPathLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub lpszExtraInfo: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a>,
+    pub dwExtraInfoLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.dwStructSize' class="structfield">
+                           <span id='dwStructSize.v' class='invisible'>
+                           <code>dwStructSize: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.lpszScheme' class="structfield">
+                           <span id='lpszScheme.v' class='invisible'>
+                           <code>lpszScheme: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwSchemeLength' class="structfield">
+                           <span id='dwSchemeLength.v' class='invisible'>
+                           <code>dwSchemeLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.nScheme' class="structfield">
+                           <span id='nScheme.v' class='invisible'>
+                           <code>nScheme: <a class="type" href="../../winapi/winhttp/type.INTERNET_SCHEME.html" title="type winapi::winhttp::INTERNET_SCHEME">INTERNET_SCHEME</a></code>
+                           </span></span><span id='structfield.lpszHostName' class="structfield">
+                           <span id='lpszHostName.v' class='invisible'>
+                           <code>lpszHostName: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwHostNameLength' class="structfield">
+                           <span id='dwHostNameLength.v' class='invisible'>
+                           <code>dwHostNameLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.nPort' class="structfield">
+                           <span id='nPort.v' class='invisible'>
+                           <code>nPort: <a class="type" href="../../winapi/winhttp/type.INTERNET_PORT.html" title="type winapi::winhttp::INTERNET_PORT">INTERNET_PORT</a></code>
+                           </span></span><span id='structfield.lpszUserName' class="structfield">
+                           <span id='lpszUserName.v' class='invisible'>
+                           <code>lpszUserName: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwUserNameLength' class="structfield">
+                           <span id='dwUserNameLength.v' class='invisible'>
+                           <code>dwUserNameLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.lpszPassword' class="structfield">
+                           <span id='lpszPassword.v' class='invisible'>
+                           <code>lpszPassword: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwPasswordLength' class="structfield">
+                           <span id='dwPasswordLength.v' class='invisible'>
+                           <code>dwPasswordLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.lpszUrlPath' class="structfield">
+                           <span id='lpszUrlPath.v' class='invisible'>
+                           <code>lpszUrlPath: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwUrlPathLength' class="structfield">
+                           <span id='dwUrlPathLength.v' class='invisible'>
+                           <code>dwUrlPathLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.lpszExtraInfo' class="structfield">
+                           <span id='lpszExtraInfo.v' class='invisible'>
+                           <code>lpszExtraInfo: <a class="type" href="../../winapi/winnt/type.LPWSTR.html" title="type winapi::winnt::LPWSTR">LPWSTR</a></code>
+                           </span></span><span id='structfield.dwExtraInfoLength' class="structfield">
+                           <span id='dwExtraInfoLength.v' class='invisible'>
+                           <code>dwExtraInfoLength: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../winapi/winhttp/struct.URL_COMPONENTS.html" title="struct winapi::winhttp::URL_COMPONENTS">URL_COMPONENTS</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../winapi/winhttp/struct.URL_COMPONENTS.html" title="struct winapi::winhttp::URL_COMPONENTS">URL_COMPONENTS</a></code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#267' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../winapi/winhttp/struct.URL_COMPONENTS.html" title="struct winapi::winhttp::URL_COMPONENTS">URL_COMPONENTS</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../winapi/winhttp/struct.URL_COMPONENTS.html" title="struct winapi::winhttp::URL_COMPONENTS">URL_COMPONENTS</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

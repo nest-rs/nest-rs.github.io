@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `IVssCreateWriterMetadataVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, IVssCreateWriterMetadataVtbl">
+
+    <title>winapi::vswriter::IVssCreateWriterMetadataVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct IVssCreateWriterMetadataVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>vswriter</a></p><script>window.sidebarCurrent = {name: 'IVssCreateWriterMetadataVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>vswriter</a>::<wbr><a class="struct" href=''>IVssCreateWriterMetadataVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#92-97' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct IVssCreateWriterMetadataVtbl {
+    pub AddIncludeFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddExcludeFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddComponent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_COMPONENT_TYPE.html" title="struct winapi::vswriter::VSS_COMPONENT_TYPE">VSS_COMPONENT_TYPE</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddDatabaseFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddDatabaseLogFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddFilesToFileGroup: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetRestoreMethod: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_RESTOREMETHOD_ENUM.html" title="struct winapi::vswriter::VSS_RESTOREMETHOD_ENUM">VSS_RESTOREMETHOD_ENUM</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_WRITERRESTORE_ENUM.html" title="struct winapi::vswriter::VSS_WRITERRESTORE_ENUM">VSS_WRITERRESTORE_ENUM</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddAlternateLocationMapping: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub AddComponentDependency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/vss/type.VSS_ID.html" title="type winapi::vss::VSS_ID">VSS_ID</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetBackupSchema: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetDocument: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/winnt/type.VOID.html" title="type winapi::winnt::VOID">VOID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SaveAsXML: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/wtypes/type.BSTR.html" title="type winapi::wtypes::BSTR">BSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.AddIncludeFiles' class="structfield">
+                           <span id='AddIncludeFiles.v' class='invisible'>
+                           <code>AddIncludeFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddExcludeFiles' class="structfield">
+                           <span id='AddExcludeFiles.v' class='invisible'>
+                           <code>AddExcludeFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddComponent' class="structfield">
+                           <span id='AddComponent.v' class='invisible'>
+                           <code>AddComponent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_COMPONENT_TYPE.html" title="struct winapi::vswriter::VSS_COMPONENT_TYPE">VSS_COMPONENT_TYPE</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddDatabaseFiles' class="structfield">
+                           <span id='AddDatabaseFiles.v' class='invisible'>
+                           <code>AddDatabaseFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddDatabaseLogFiles' class="structfield">
+                           <span id='AddDatabaseLogFiles.v' class='invisible'>
+                           <code>AddDatabaseLogFiles: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddFilesToFileGroup' class="structfield">
+                           <span id='AddFilesToFileGroup.v' class='invisible'>
+                           <code>AddFilesToFileGroup: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetRestoreMethod' class="structfield">
+                           <span id='SetRestoreMethod.v' class='invisible'>
+                           <code>SetRestoreMethod: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_RESTOREMETHOD_ENUM.html" title="struct winapi::vswriter::VSS_RESTOREMETHOD_ENUM">VSS_RESTOREMETHOD_ENUM</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="struct" href="../../winapi/vswriter/struct.VSS_WRITERRESTORE_ENUM.html" title="struct winapi::vswriter::VSS_WRITERRESTORE_ENUM">VSS_WRITERRESTORE_ENUM</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddAlternateLocationMapping' class="structfield">
+                           <span id='AddAlternateLocationMapping.v' class='invisible'>
+                           <code>AddAlternateLocationMapping: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.AddComponentDependency' class="structfield">
+                           <span id='AddComponentDependency.v' class='invisible'>
+                           <code>AddComponentDependency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/vss/type.VSS_ID.html" title="type winapi::vss::VSS_ID">VSS_ID</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, _: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetBackupSchema' class="structfield">
+                           <span id='SetBackupSchema.v' class='invisible'>
+                           <code>SetBackupSchema: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetDocument' class="structfield">
+                           <span id='GetDocument.v' class='invisible'>
+                           <code>GetDocument: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/winnt/type.VOID.html" title="type winapi::winnt::VOID">VOID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SaveAsXML' class="structfield">
+                           <span id='SaveAsXML.v' class='invisible'>
+                           <code>SaveAsXML: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/vswriter/struct.IVssCreateWriterMetadata.html" title="struct winapi::vswriter::IVssCreateWriterMetadata">IVssCreateWriterMetadata</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/wtypes/type.BSTR.html" title="type winapi::wtypes::BSTR">BSTR</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

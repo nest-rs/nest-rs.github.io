@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ISpGrammarBuilder` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ISpGrammarBuilder">
+
+    <title>winapi::sapi::ISpGrammarBuilder - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ISpGrammarBuilder</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li><li><a href="#deref-methods">Methods from Deref&lt;Target=IUnknown&gt;</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a></p><script>window.sidebarCurrent = {name: 'ISpGrammarBuilder', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a>::<wbr><a class="struct" href=''>ISpGrammarBuilder</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#147-149' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ISpGrammarBuilder {
+    pub lpVtbl: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilderVtbl.html" title="struct winapi::sapi::ISpGrammarBuilderVtbl">ISpGrammarBuilderVtbl</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.lpVtbl' class="structfield">
+                           <span id='lpVtbl.v' class='invisible'>
+                           <code>lpVtbl: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilderVtbl.html" title="struct winapi::sapi::ISpGrammarBuilderVtbl">ISpGrammarBuilderVtbl</a></code>
+                           </span></span>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilder.html" title="struct winapi::sapi::ISpGrammarBuilder">ISpGrammarBuilder</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#150-155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.ResetGrammar' class="method"><span id='ResetGrammar.v' class='invisible'><code>unsafe fn <a href='#method.ResetGrammar' class='fnname'>ResetGrammar</a>(&amp;mut self, NewLanguage: <a class="type" href="../../winapi/minwindef/type.WORD.html" title="type winapi::minwindef::WORD">WORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.GetRule' class="method"><span id='GetRule.v' class='invisible'><code>unsafe fn <a href='#method.GetRule' class='fnname'>GetRule</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;pszRuleName: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;dwRuleId: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;dwAttributes: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;fCreateIfNotExist: <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;phInitialState: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.ClearRule' class="method"><span id='ClearRule.v' class='invisible'><code>unsafe fn <a href='#method.ClearRule' class='fnname'>ClearRule</a>(&amp;mut self, hState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.CreateNewState' class="method"><span id='CreateNewState.v' class='invisible'><code>unsafe fn <a href='#method.CreateNewState' class='fnname'>CreateNewState</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;phState: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.AddWordTransition' class="method"><span id='AddWordTransition.v' class='invisible'><code>unsafe fn <a href='#method.AddWordTransition' class='fnname'>AddWordTransition</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hFromState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;hToState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;psz: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;pszSeparators: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;eWordType: <a class="struct" href="../../winapi/sapi/struct.SPGRAMMARWORDTYPE.html" title="struct winapi::sapi::SPGRAMMARWORDTYPE">SPGRAMMARWORDTYPE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;Weight: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;pPropInfo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/sapi/struct.SPPROPERTYINFO.html" title="struct winapi::sapi::SPPROPERTYINFO">SPPROPERTYINFO</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.AddRuleTransition' class="method"><span id='AddRuleTransition.v' class='invisible'><code>unsafe fn <a href='#method.AddRuleTransition' class='fnname'>AddRuleTransition</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hFromState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;hToState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;hRule: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;Weight: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;pPropInfo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/sapi/struct.SPPROPERTYINFO.html" title="struct winapi::sapi::SPPROPERTYINFO">SPPROPERTYINFO</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.AddResource' class="method"><span id='AddResource.v' class='invisible'><code>unsafe fn <a href='#method.AddResource' class='fnname'>AddResource</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hRuleState: <a class="type" href="../../winapi/sapi/type.SPSTATEHANDLE.html" title="type winapi::sapi::SPSTATEHANDLE">SPSTATEHANDLE</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;pszResourceName: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;pszResourceValue: <a class="type" href="../../winapi/winnt/type.LPCWSTR.html" title="type winapi::winnt::LPCWSTR">LPCWSTR</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Commit' class="method"><span id='Commit.v' class='invisible'><code>unsafe fn <a href='#method.Commit' class='fnname'>Commit</a>(&amp;mut self, dwReserved: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+</div>
+                    <h2 id='deref-methods' class='small-section-header'>
+                      Methods from <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a>&lt;Target = <a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a>&gt;<a href='#deref-methods' class='anchor'></a>
+                    </h2>
+                <div class='impl-items'><h4 id='method.QueryInterface' class="method"><span id='QueryInterface.v' class='invisible'><code>unsafe fn <a href='#method.QueryInterface' class='fnname'>QueryInterface</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;riid: <a class="type" href="../../winapi/guiddef/type.REFIID.html" title="type winapi::guiddef::REFIID">REFIID</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;ppvObject: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a><br>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#104-106' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.AddRef' class="method"><span id='AddRef.v' class='invisible'><code>unsafe fn <a href='#method.AddRef' class='fnname'>AddRef</a>(&amp;mut self) -&gt; <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#104-106' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Release' class="method"><span id='Release.v' class='invisible'><code>unsafe fn <a href='#method.Release' class='fnname'>Release</a>(&amp;mut self) -&gt; <a class="type" href="../../winapi/minwindef/type.ULONG.html" title="type winapi::minwindef::ULONG">ULONG</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#104-106' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilder.html" title="struct winapi::sapi::ISpGrammarBuilder">ISpGrammarBuilder</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#146' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#146' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Deref' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a> for <a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilder.html" title="struct winapi::sapi::ISpGrammarBuilder">ISpGrammarBuilder</a></code><a href='#impl-Deref' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#156-162' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class="type"><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#associatedtype.Target' class="type">Target</a> = <a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a></code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing.</p>
+</div><h4 id='method.deref' class="method"><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#159-161' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Dereferences the value.</p>
+</div></div><h3 id='impl-DerefMut' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.DerefMut.html" title="trait core::ops::deref::DerefMut">DerefMut</a> for <a class="struct" href="../../winapi/sapi/struct.ISpGrammarBuilder.html" title="struct winapi::sapi::ISpGrammarBuilder">ISpGrammarBuilder</a></code><a href='#impl-DerefMut' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#163-168' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.deref_mut' class="method"><span id='deref_mut.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.DerefMut.html#tymethod.deref_mut' class='fnname'>deref_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/unknwnbase/struct.IUnknown.html" title="struct winapi::unknwnbase::IUnknown">IUnknown</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#165-167' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Mutably dereferences the value.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

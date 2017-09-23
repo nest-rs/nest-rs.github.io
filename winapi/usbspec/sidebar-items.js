@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["Usb11Device",""],["Usb20Device",""],["UsbFullSpeed",""],["UsbHighSpeed",""],["UsbLowSpeed",""],["UsbSuperSpeed",""]],"struct":[["BM_REQUEST_TYPE",""],["USB_CONFIGURATION_DESCRIPTOR",""],["USB_DEVICE_SPEED",""],["USB_DEVICE_TYPE",""]],"type":[["PBM_REQUEST_TYPE",""],["PUSB_CONFIGURATION_DESCRIPTOR",""]]});

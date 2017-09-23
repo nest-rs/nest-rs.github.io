@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ID3D11ShaderReflectionVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ID3D11ShaderReflectionVtbl">
+
+    <title>winapi::d3d11shader::ID3D11ShaderReflectionVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ID3D11ShaderReflectionVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d11shader</a></p><script>window.sidebarCurrent = {name: 'ID3D11ShaderReflectionVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d11shader</a>::<wbr><a class="struct" href=''>ID3D11ShaderReflectionVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ID3D11ShaderReflectionVtbl {
+    pub parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a>,
+    pub GetDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_DESC">D3D11_SHADER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetConstantBufferByIndex: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionConstantBuffer.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionConstantBuffer">ID3D11ShaderReflectionConstantBuffer</a>,
+    pub GetConstantBufferByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionConstantBuffer.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionConstantBuffer">ID3D11ShaderReflectionConstantBuffer</a>,
+    pub GetResourceBindingDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_INPUT_BIND_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_INPUT_BIND_DESC">D3D11_SHADER_INPUT_BIND_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetInputParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetOutputParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetPatchConstantParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetVariableByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionVariable.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionVariable">ID3D11ShaderReflectionVariable</a>,
+    pub GetResourceBindingDescByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_INPUT_BIND_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_INPUT_BIND_DESC">D3D11_SHADER_INPUT_BIND_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetMovInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetMovcInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetConversionInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetBitwiseInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetGSInputPrimitive: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="struct" href="../../winapi/d3dcommon/struct.D3D_PRIMITIVE.html" title="struct winapi::d3dcommon::D3D_PRIMITIVE">D3D_PRIMITIVE</a>,
+    pub IsSampleFrequencyShader: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>,
+    pub GetNumInterfaceSlots: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetMinFeatureLevel: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3dcommon/struct.D3D_FEATURE_LEVEL.html" title="struct winapi::d3dcommon::D3D_FEATURE_LEVEL">D3D_FEATURE_LEVEL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetThreadGroupSize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub GetRequiresFlags: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a></code>
+                           </span></span><span id='structfield.GetDesc' class="structfield">
+                           <span id='GetDesc.v' class='invisible'>
+                           <code>GetDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_DESC">D3D11_SHADER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetConstantBufferByIndex' class="structfield">
+                           <span id='GetConstantBufferByIndex.v' class='invisible'>
+                           <code>GetConstantBufferByIndex: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionConstantBuffer.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionConstantBuffer">ID3D11ShaderReflectionConstantBuffer</a></code>
+                           </span></span><span id='structfield.GetConstantBufferByName' class="structfield">
+                           <span id='GetConstantBufferByName.v' class='invisible'>
+                           <code>GetConstantBufferByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionConstantBuffer.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionConstantBuffer">ID3D11ShaderReflectionConstantBuffer</a></code>
+                           </span></span><span id='structfield.GetResourceBindingDesc' class="structfield">
+                           <span id='GetResourceBindingDesc.v' class='invisible'>
+                           <code>GetResourceBindingDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_INPUT_BIND_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_INPUT_BIND_DESC">D3D11_SHADER_INPUT_BIND_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetInputParameterDesc' class="structfield">
+                           <span id='GetInputParameterDesc.v' class='invisible'>
+                           <code>GetInputParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetOutputParameterDesc' class="structfield">
+                           <span id='GetOutputParameterDesc.v' class='invisible'>
+                           <code>GetOutputParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetPatchConstantParameterDesc' class="structfield">
+                           <span id='GetPatchConstantParameterDesc.v' class='invisible'>
+                           <code>GetPatchConstantParameterDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SIGNATURE_PARAMETER_DESC.html" title="struct winapi::d3d11shader::D3D11_SIGNATURE_PARAMETER_DESC">D3D11_SIGNATURE_PARAMETER_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetVariableByName' class="structfield">
+                           <span id='GetVariableByName.v' class='invisible'>
+                           <code>GetVariableByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflectionVariable.html" title="struct winapi::d3d11shader::ID3D11ShaderReflectionVariable">ID3D11ShaderReflectionVariable</a></code>
+                           </span></span><span id='structfield.GetResourceBindingDescByName' class="structfield">
+                           <span id='GetResourceBindingDescByName.v' class='invisible'>
+                           <code>GetResourceBindingDescByName: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="type" href="../../winapi/winnt/type.LPCSTR.html" title="type winapi::winnt::LPCSTR">LPCSTR</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.D3D11_SHADER_INPUT_BIND_DESC.html" title="struct winapi::d3d11shader::D3D11_SHADER_INPUT_BIND_DESC">D3D11_SHADER_INPUT_BIND_DESC</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetMovInstructionCount' class="structfield">
+                           <span id='GetMovInstructionCount.v' class='invisible'>
+                           <code>GetMovInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetMovcInstructionCount' class="structfield">
+                           <span id='GetMovcInstructionCount.v' class='invisible'>
+                           <code>GetMovcInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetConversionInstructionCount' class="structfield">
+                           <span id='GetConversionInstructionCount.v' class='invisible'>
+                           <code>GetConversionInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetBitwiseInstructionCount' class="structfield">
+                           <span id='GetBitwiseInstructionCount.v' class='invisible'>
+                           <code>GetBitwiseInstructionCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetGSInputPrimitive' class="structfield">
+                           <span id='GetGSInputPrimitive.v' class='invisible'>
+                           <code>GetGSInputPrimitive: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="struct" href="../../winapi/d3dcommon/struct.D3D_PRIMITIVE.html" title="struct winapi::d3dcommon::D3D_PRIMITIVE">D3D_PRIMITIVE</a></code>
+                           </span></span><span id='structfield.IsSampleFrequencyShader' class="structfield">
+                           <span id='IsSampleFrequencyShader.v' class='invisible'>
+                           <code>IsSampleFrequencyShader: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a></code>
+                           </span></span><span id='structfield.GetNumInterfaceSlots' class="structfield">
+                           <span id='GetNumInterfaceSlots.v' class='invisible'>
+                           <code>GetNumInterfaceSlots: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetMinFeatureLevel' class="structfield">
+                           <span id='GetMinFeatureLevel.v' class='invisible'>
+                           <code>GetMinFeatureLevel: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3dcommon/struct.D3D_FEATURE_LEVEL.html" title="struct winapi::d3dcommon::D3D_FEATURE_LEVEL">D3D_FEATURE_LEVEL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetThreadGroupSize' class="structfield">
+                           <span id='GetThreadGroupSize.v' class='invisible'>
+                           <code>GetThreadGroupSize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.GetRequiresFlags' class="structfield">
+                           <span id='GetRequiresFlags.v' class='invisible'>
+                           <code>GetRequiresFlags: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d11shader/struct.ID3D11ShaderReflection.html" title="struct winapi::d3d11shader::ID3D11ShaderReflection">ID3D11ShaderReflection</a>) -&gt; <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

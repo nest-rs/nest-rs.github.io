@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `IAudioClientVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, IAudioClientVtbl">
+
+    <title>winapi::audioclient::IAudioClientVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct IAudioClientVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>audioclient</a></p><script>window.sidebarCurrent = {name: 'IAudioClientVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>audioclient</a>::<wbr><a class="struct" href=''>IAudioClientVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct IAudioClientVtbl {
+    pub parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a>,
+    pub Initialize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="struct" href="../../winapi/audiosessiontypes/struct.AUDCLNT_SHAREMODE.html" title="struct winapi::audiosessiontypes::AUDCLNT_SHAREMODE">AUDCLNT_SHAREMODE</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>, _: <a class="type" href="../../winapi/guiddef/type.LPCGUID.html" title="type winapi::guiddef::LPCGUID">LPCGUID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetBufferSize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetStreamLatency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetCurrentPadding: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub IsFormatSupported: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="struct" href="../../winapi/audiosessiontypes/struct.AUDCLNT_SHAREMODE.html" title="struct winapi::audiosessiontypes::AUDCLNT_SHAREMODE">AUDCLNT_SHAREMODE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetMixFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetDevicePeriod: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Start: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Stop: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Reset: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub SetEventHandle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="type" href="../../winapi/winnt/type.HANDLE.html" title="type winapi::winnt::HANDLE">HANDLE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetService: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="type" href="../../winapi/guiddef/type.REFIID.html" title="type winapi::guiddef::REFIID">REFIID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a></code>
+                           </span></span><span id='structfield.Initialize' class="structfield">
+                           <span id='Initialize.v' class='invisible'>
+                           <code>Initialize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="struct" href="../../winapi/audiosessiontypes/struct.AUDCLNT_SHAREMODE.html" title="struct winapi::audiosessiontypes::AUDCLNT_SHAREMODE">AUDCLNT_SHAREMODE</a>, _: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>, _: <a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>, _: <a class="type" href="../../winapi/guiddef/type.LPCGUID.html" title="type winapi::guiddef::LPCGUID">LPCGUID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetBufferSize' class="structfield">
+                           <span id='GetBufferSize.v' class='invisible'>
+                           <code>GetBufferSize: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetStreamLatency' class="structfield">
+                           <span id='GetStreamLatency.v' class='invisible'>
+                           <code>GetStreamLatency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetCurrentPadding' class="structfield">
+                           <span id='GetCurrentPadding.v' class='invisible'>
+                           <code>GetCurrentPadding: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.IsFormatSupported' class="structfield">
+                           <span id='IsFormatSupported.v' class='invisible'>
+                           <code>IsFormatSupported: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="struct" href="../../winapi/audiosessiontypes/struct.AUDCLNT_SHAREMODE.html" title="struct winapi::audiosessiontypes::AUDCLNT_SHAREMODE">AUDCLNT_SHAREMODE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetMixFormat' class="structfield">
+                           <span id='GetMixFormat.v' class='invisible'>
+                           <code>GetMixFormat: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/mmreg/struct.WAVEFORMATEX.html" title="struct winapi::mmreg::WAVEFORMATEX">WAVEFORMATEX</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetDevicePeriod' class="structfield">
+                           <span id='GetDevicePeriod.v' class='invisible'>
+                           <code>GetDevicePeriod: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/strmif/type.REFERENCE_TIME.html" title="type winapi::strmif::REFERENCE_TIME">REFERENCE_TIME</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Start' class="structfield">
+                           <span id='Start.v' class='invisible'>
+                           <code>Start: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Stop' class="structfield">
+                           <span id='Stop.v' class='invisible'>
+                           <code>Stop: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Reset' class="structfield">
+                           <span id='Reset.v' class='invisible'>
+                           <code>Reset: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.SetEventHandle' class="structfield">
+                           <span id='SetEventHandle.v' class='invisible'>
+                           <code>SetEventHandle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="type" href="../../winapi/winnt/type.HANDLE.html" title="type winapi::winnt::HANDLE">HANDLE</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetService' class="structfield">
+                           <span id='GetService.v' class='invisible'>
+                           <code>GetService: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/audioclient/struct.IAudioClient.html" title="struct winapi::audioclient::IAudioClient">IAudioClient</a>, _: <a class="type" href="../../winapi/guiddef/type.REFIID.html" title="type winapi::guiddef::REFIID">REFIID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.LPVOID.html" title="type winapi::minwindef::LPVOID">LPVOID</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

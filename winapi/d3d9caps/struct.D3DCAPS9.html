@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `D3DCAPS9` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, D3DCAPS9">
+
+    <title>winapi::d3d9caps::D3DCAPS9 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct D3DCAPS9</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d9caps</a></p><script>window.sidebarCurrent = {name: 'D3DCAPS9', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d9caps</a>::<wbr><a class="struct" href=''>D3DCAPS9</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#264-266' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct D3DCAPS9 {
+    pub DeviceType: <a class="struct" href="../../winapi/d3d9types/struct.D3DDEVTYPE.html" title="struct winapi::d3d9types::D3DDEVTYPE">D3DDEVTYPE</a>,
+    pub AdapterOrdinal: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub Caps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub Caps2: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub Caps3: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub PresentationIntervals: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub CursorCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub DevCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub PrimitiveMiscCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub RasterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub ZCmpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub SrcBlendCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub DestBlendCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub AlphaCmpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub ShadeCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub TextureCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub TextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub CubeTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub VolumeTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub TextureAddressCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub VolumeTextureAddressCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub LineCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxTextureWidth: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxTextureHeight: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVolumeExtent: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxTextureRepeat: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxTextureAspectRatio: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxAnisotropy: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexW: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub GuardBandLeft: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub GuardBandTop: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub GuardBandRight: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub GuardBandBottom: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub ExtentsAdjust: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub StencilCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub FVFCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub TextureOpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxTextureBlendStages: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxSimultaneousTextures: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub VertexProcessingCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxActiveLights: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxUserClipPlanes: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexBlendMatrices: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexBlendMatrixIndex: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxPointSize: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub MaxPrimitiveCount: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexIndex: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxStreams: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxStreamStride: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub VertexShaderVersion: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexShaderConst: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub PixelShaderVersion: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub PixelShader1xMaxValue: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub DevCaps2: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxNpatchTessellationLevel: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a>,
+    pub Reserved5: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MasterAdapterOrdinal: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub AdapterOrdinalInGroup: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub NumberOfAdaptersInGroup: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>,
+    pub DeclTypes: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub NumSimultaneousRTs: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub StretchRectFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub VS20Caps: <a class="struct" href="../../winapi/d3d9caps/struct.D3DVSHADERCAPS2_0.html" title="struct winapi::d3d9caps::D3DVSHADERCAPS2_0">D3DVSHADERCAPS2_0</a>,
+    pub PS20Caps: <a class="struct" href="../../winapi/d3d9caps/struct.D3DPSHADERCAPS2_0.html" title="struct winapi::d3d9caps::D3DPSHADERCAPS2_0">D3DPSHADERCAPS2_0</a>,
+    pub VertexTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVShaderInstructionsExecuted: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxPShaderInstructionsExecuted: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxVertexShader30InstructionSlots: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+    pub MaxPixelShader30InstructionSlots: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.DeviceType' class="structfield">
+                           <span id='DeviceType.v' class='invisible'>
+                           <code>DeviceType: <a class="struct" href="../../winapi/d3d9types/struct.D3DDEVTYPE.html" title="struct winapi::d3d9types::D3DDEVTYPE">D3DDEVTYPE</a></code>
+                           </span></span><span id='structfield.AdapterOrdinal' class="structfield">
+                           <span id='AdapterOrdinal.v' class='invisible'>
+                           <code>AdapterOrdinal: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.Caps' class="structfield">
+                           <span id='Caps.v' class='invisible'>
+                           <code>Caps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.Caps2' class="structfield">
+                           <span id='Caps2.v' class='invisible'>
+                           <code>Caps2: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.Caps3' class="structfield">
+                           <span id='Caps3.v' class='invisible'>
+                           <code>Caps3: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.PresentationIntervals' class="structfield">
+                           <span id='PresentationIntervals.v' class='invisible'>
+                           <code>PresentationIntervals: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.CursorCaps' class="structfield">
+                           <span id='CursorCaps.v' class='invisible'>
+                           <code>CursorCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.DevCaps' class="structfield">
+                           <span id='DevCaps.v' class='invisible'>
+                           <code>DevCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.PrimitiveMiscCaps' class="structfield">
+                           <span id='PrimitiveMiscCaps.v' class='invisible'>
+                           <code>PrimitiveMiscCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.RasterCaps' class="structfield">
+                           <span id='RasterCaps.v' class='invisible'>
+                           <code>RasterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.ZCmpCaps' class="structfield">
+                           <span id='ZCmpCaps.v' class='invisible'>
+                           <code>ZCmpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.SrcBlendCaps' class="structfield">
+                           <span id='SrcBlendCaps.v' class='invisible'>
+                           <code>SrcBlendCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.DestBlendCaps' class="structfield">
+                           <span id='DestBlendCaps.v' class='invisible'>
+                           <code>DestBlendCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.AlphaCmpCaps' class="structfield">
+                           <span id='AlphaCmpCaps.v' class='invisible'>
+                           <code>AlphaCmpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.ShadeCaps' class="structfield">
+                           <span id='ShadeCaps.v' class='invisible'>
+                           <code>ShadeCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.TextureCaps' class="structfield">
+                           <span id='TextureCaps.v' class='invisible'>
+                           <code>TextureCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.TextureFilterCaps' class="structfield">
+                           <span id='TextureFilterCaps.v' class='invisible'>
+                           <code>TextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.CubeTextureFilterCaps' class="structfield">
+                           <span id='CubeTextureFilterCaps.v' class='invisible'>
+                           <code>CubeTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.VolumeTextureFilterCaps' class="structfield">
+                           <span id='VolumeTextureFilterCaps.v' class='invisible'>
+                           <code>VolumeTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.TextureAddressCaps' class="structfield">
+                           <span id='TextureAddressCaps.v' class='invisible'>
+                           <code>TextureAddressCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.VolumeTextureAddressCaps' class="structfield">
+                           <span id='VolumeTextureAddressCaps.v' class='invisible'>
+                           <code>VolumeTextureAddressCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.LineCaps' class="structfield">
+                           <span id='LineCaps.v' class='invisible'>
+                           <code>LineCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxTextureWidth' class="structfield">
+                           <span id='MaxTextureWidth.v' class='invisible'>
+                           <code>MaxTextureWidth: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxTextureHeight' class="structfield">
+                           <span id='MaxTextureHeight.v' class='invisible'>
+                           <code>MaxTextureHeight: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVolumeExtent' class="structfield">
+                           <span id='MaxVolumeExtent.v' class='invisible'>
+                           <code>MaxVolumeExtent: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxTextureRepeat' class="structfield">
+                           <span id='MaxTextureRepeat.v' class='invisible'>
+                           <code>MaxTextureRepeat: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxTextureAspectRatio' class="structfield">
+                           <span id='MaxTextureAspectRatio.v' class='invisible'>
+                           <code>MaxTextureAspectRatio: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxAnisotropy' class="structfield">
+                           <span id='MaxAnisotropy.v' class='invisible'>
+                           <code>MaxAnisotropy: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexW' class="structfield">
+                           <span id='MaxVertexW.v' class='invisible'>
+                           <code>MaxVertexW: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.GuardBandLeft' class="structfield">
+                           <span id='GuardBandLeft.v' class='invisible'>
+                           <code>GuardBandLeft: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.GuardBandTop' class="structfield">
+                           <span id='GuardBandTop.v' class='invisible'>
+                           <code>GuardBandTop: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.GuardBandRight' class="structfield">
+                           <span id='GuardBandRight.v' class='invisible'>
+                           <code>GuardBandRight: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.GuardBandBottom' class="structfield">
+                           <span id='GuardBandBottom.v' class='invisible'>
+                           <code>GuardBandBottom: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.ExtentsAdjust' class="structfield">
+                           <span id='ExtentsAdjust.v' class='invisible'>
+                           <code>ExtentsAdjust: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.StencilCaps' class="structfield">
+                           <span id='StencilCaps.v' class='invisible'>
+                           <code>StencilCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.FVFCaps' class="structfield">
+                           <span id='FVFCaps.v' class='invisible'>
+                           <code>FVFCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.TextureOpCaps' class="structfield">
+                           <span id='TextureOpCaps.v' class='invisible'>
+                           <code>TextureOpCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxTextureBlendStages' class="structfield">
+                           <span id='MaxTextureBlendStages.v' class='invisible'>
+                           <code>MaxTextureBlendStages: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxSimultaneousTextures' class="structfield">
+                           <span id='MaxSimultaneousTextures.v' class='invisible'>
+                           <code>MaxSimultaneousTextures: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.VertexProcessingCaps' class="structfield">
+                           <span id='VertexProcessingCaps.v' class='invisible'>
+                           <code>VertexProcessingCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxActiveLights' class="structfield">
+                           <span id='MaxActiveLights.v' class='invisible'>
+                           <code>MaxActiveLights: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxUserClipPlanes' class="structfield">
+                           <span id='MaxUserClipPlanes.v' class='invisible'>
+                           <code>MaxUserClipPlanes: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexBlendMatrices' class="structfield">
+                           <span id='MaxVertexBlendMatrices.v' class='invisible'>
+                           <code>MaxVertexBlendMatrices: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexBlendMatrixIndex' class="structfield">
+                           <span id='MaxVertexBlendMatrixIndex.v' class='invisible'>
+                           <code>MaxVertexBlendMatrixIndex: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxPointSize' class="structfield">
+                           <span id='MaxPointSize.v' class='invisible'>
+                           <code>MaxPointSize: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.MaxPrimitiveCount' class="structfield">
+                           <span id='MaxPrimitiveCount.v' class='invisible'>
+                           <code>MaxPrimitiveCount: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexIndex' class="structfield">
+                           <span id='MaxVertexIndex.v' class='invisible'>
+                           <code>MaxVertexIndex: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxStreams' class="structfield">
+                           <span id='MaxStreams.v' class='invisible'>
+                           <code>MaxStreams: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxStreamStride' class="structfield">
+                           <span id='MaxStreamStride.v' class='invisible'>
+                           <code>MaxStreamStride: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.VertexShaderVersion' class="structfield">
+                           <span id='VertexShaderVersion.v' class='invisible'>
+                           <code>VertexShaderVersion: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexShaderConst' class="structfield">
+                           <span id='MaxVertexShaderConst.v' class='invisible'>
+                           <code>MaxVertexShaderConst: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.PixelShaderVersion' class="structfield">
+                           <span id='PixelShaderVersion.v' class='invisible'>
+                           <code>PixelShaderVersion: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.PixelShader1xMaxValue' class="structfield">
+                           <span id='PixelShader1xMaxValue.v' class='invisible'>
+                           <code>PixelShader1xMaxValue: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.DevCaps2' class="structfield">
+                           <span id='DevCaps2.v' class='invisible'>
+                           <code>DevCaps2: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxNpatchTessellationLevel' class="structfield">
+                           <span id='MaxNpatchTessellationLevel.v' class='invisible'>
+                           <code>MaxNpatchTessellationLevel: <a class="type" href="../../winapi/type.c_float.html" title="type winapi::c_float">c_float</a></code>
+                           </span></span><span id='structfield.Reserved5' class="structfield">
+                           <span id='Reserved5.v' class='invisible'>
+                           <code>Reserved5: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MasterAdapterOrdinal' class="structfield">
+                           <span id='MasterAdapterOrdinal.v' class='invisible'>
+                           <code>MasterAdapterOrdinal: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.AdapterOrdinalInGroup' class="structfield">
+                           <span id='AdapterOrdinalInGroup.v' class='invisible'>
+                           <code>AdapterOrdinalInGroup: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.NumberOfAdaptersInGroup' class="structfield">
+                           <span id='NumberOfAdaptersInGroup.v' class='invisible'>
+                           <code>NumberOfAdaptersInGroup: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a></code>
+                           </span></span><span id='structfield.DeclTypes' class="structfield">
+                           <span id='DeclTypes.v' class='invisible'>
+                           <code>DeclTypes: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.NumSimultaneousRTs' class="structfield">
+                           <span id='NumSimultaneousRTs.v' class='invisible'>
+                           <code>NumSimultaneousRTs: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.StretchRectFilterCaps' class="structfield">
+                           <span id='StretchRectFilterCaps.v' class='invisible'>
+                           <code>StretchRectFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.VS20Caps' class="structfield">
+                           <span id='VS20Caps.v' class='invisible'>
+                           <code>VS20Caps: <a class="struct" href="../../winapi/d3d9caps/struct.D3DVSHADERCAPS2_0.html" title="struct winapi::d3d9caps::D3DVSHADERCAPS2_0">D3DVSHADERCAPS2_0</a></code>
+                           </span></span><span id='structfield.PS20Caps' class="structfield">
+                           <span id='PS20Caps.v' class='invisible'>
+                           <code>PS20Caps: <a class="struct" href="../../winapi/d3d9caps/struct.D3DPSHADERCAPS2_0.html" title="struct winapi::d3d9caps::D3DPSHADERCAPS2_0">D3DPSHADERCAPS2_0</a></code>
+                           </span></span><span id='structfield.VertexTextureFilterCaps' class="structfield">
+                           <span id='VertexTextureFilterCaps.v' class='invisible'>
+                           <code>VertexTextureFilterCaps: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVShaderInstructionsExecuted' class="structfield">
+                           <span id='MaxVShaderInstructionsExecuted.v' class='invisible'>
+                           <code>MaxVShaderInstructionsExecuted: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxPShaderInstructionsExecuted' class="structfield">
+                           <span id='MaxPShaderInstructionsExecuted.v' class='invisible'>
+                           <code>MaxPShaderInstructionsExecuted: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxVertexShader30InstructionSlots' class="structfield">
+                           <span id='MaxVertexShader30InstructionSlots.v' class='invisible'>
+                           <code>MaxVertexShader30InstructionSlots: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span><span id='structfield.MaxPixelShader30InstructionSlots' class="structfield">
+                           <span id='MaxPixelShader30InstructionSlots.v' class='invisible'>
+                           <code>MaxPixelShader30InstructionSlots: <a class="type" href="../../winapi/minwindef/type.DWORD.html" title="type winapi::minwindef::DWORD">DWORD</a></code>
+                           </span></span>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../winapi/d3d9caps/struct.D3DCAPS9.html" title="struct winapi::d3d9caps::D3DCAPS9">D3DCAPS9</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../winapi/d3d9caps/struct.D3DCAPS9.html" title="struct winapi::d3d9caps::D3DCAPS9">D3DCAPS9</a></code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#267' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../winapi/d3d9caps/struct.D3DCAPS9.html" title="struct winapi::d3d9caps::D3DCAPS9">D3DCAPS9</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../winapi/d3d9caps/struct.D3DCAPS9.html" title="struct winapi::d3d9caps::D3DCAPS9">D3DCAPS9</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

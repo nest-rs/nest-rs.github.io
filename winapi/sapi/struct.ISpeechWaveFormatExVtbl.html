@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ISpeechWaveFormatExVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ISpeechWaveFormatExVtbl">
+
+    <title>winapi::sapi::ISpeechWaveFormatExVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ISpeechWaveFormatExVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a></p><script>window.sidebarCurrent = {name: 'ISpeechWaveFormatExVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>sapi</a>::<wbr><a class="struct" href=''>ISpeechWaveFormatExVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ISpeechWaveFormatExVtbl {
+    pub parent: <a class="struct" href="../../winapi/oaidl/struct.IDispatchVtbl.html" title="struct winapi::oaidl::IDispatchVtbl">IDispatchVtbl</a>,
+    pub get_FormatTag: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_FormatTag: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_Channels: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_Channels: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_SamplesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_SamplesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_AvgBytesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_AvgBytesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_BlockAlign: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_BlockAlign: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_BitsPerSample: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_BitsPerSample: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub get_ExtraData: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/oaidl/struct.VARIANT.html" title="struct winapi::oaidl::VARIANT">VARIANT</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub put_ExtraData: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="struct" href="../../winapi/oaidl/struct.VARIANT.html" title="struct winapi::oaidl::VARIANT">VARIANT</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/oaidl/struct.IDispatchVtbl.html" title="struct winapi::oaidl::IDispatchVtbl">IDispatchVtbl</a></code>
+                           </span></span><span id='structfield.get_FormatTag' class="structfield">
+                           <span id='get_FormatTag.v' class='invisible'>
+                           <code>get_FormatTag: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_FormatTag' class="structfield">
+                           <span id='put_FormatTag.v' class='invisible'>
+                           <code>put_FormatTag: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_Channels' class="structfield">
+                           <span id='get_Channels.v' class='invisible'>
+                           <code>get_Channels: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_Channels' class="structfield">
+                           <span id='put_Channels.v' class='invisible'>
+                           <code>put_Channels: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_SamplesPerSec' class="structfield">
+                           <span id='get_SamplesPerSec.v' class='invisible'>
+                           <code>get_SamplesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_SamplesPerSec' class="structfield">
+                           <span id='put_SamplesPerSec.v' class='invisible'>
+                           <code>put_SamplesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_AvgBytesPerSec' class="structfield">
+                           <span id='get_AvgBytesPerSec.v' class='invisible'>
+                           <code>get_AvgBytesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_AvgBytesPerSec' class="structfield">
+                           <span id='put_AvgBytesPerSec.v' class='invisible'>
+                           <code>put_AvgBytesPerSec: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_long.html" title="type winapi::c_long">c_long</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_BlockAlign' class="structfield">
+                           <span id='get_BlockAlign.v' class='invisible'>
+                           <code>get_BlockAlign: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_BlockAlign' class="structfield">
+                           <span id='put_BlockAlign.v' class='invisible'>
+                           <code>put_BlockAlign: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_BitsPerSample' class="structfield">
+                           <span id='get_BitsPerSample.v' class='invisible'>
+                           <code>get_BitsPerSample: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_BitsPerSample' class="structfield">
+                           <span id='put_BitsPerSample.v' class='invisible'>
+                           <code>put_BitsPerSample: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="type" href="../../winapi/type.c_short.html" title="type winapi::c_short">c_short</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.get_ExtraData' class="structfield">
+                           <span id='get_ExtraData.v' class='invisible'>
+                           <code>get_ExtraData: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/oaidl/struct.VARIANT.html" title="struct winapi::oaidl::VARIANT">VARIANT</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.put_ExtraData' class="structfield">
+                           <span id='put_ExtraData.v' class='invisible'>
+                           <code>put_ExtraData: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/sapi/struct.ISpeechWaveFormatEx.html" title="struct winapi::sapi::ISpeechWaveFormatEx">ISpeechWaveFormatEx</a>, _: <a class="struct" href="../../winapi/oaidl/struct.VARIANT.html" title="struct winapi::oaidl::VARIANT">VARIANT</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

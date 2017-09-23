@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `IDWriteFontVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, IDWriteFontVtbl">
+
+    <title>winapi::dwrite::IDWriteFontVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct IDWriteFontVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>dwrite</a></p><script>window.sidebarCurrent = {name: 'IDWriteFontVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>dwrite</a>::<wbr><a class="struct" href=''>IDWriteFontVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct IDWriteFontVtbl {
+    pub parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a>,
+    pub GetFontFamily: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFontFamily.html" title="struct winapi::dwrite::IDWriteFontFamily">IDWriteFontFamily</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetWeight: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_WEIGHT.html" title="struct winapi::dwrite::DWRITE_FONT_WEIGHT">DWRITE_FONT_WEIGHT</a>,
+    pub GetStretch: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_STRETCH.html" title="struct winapi::dwrite::DWRITE_FONT_STRETCH">DWRITE_FONT_STRETCH</a>,
+    pub GetStyle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_STYLE.html" title="struct winapi::dwrite::DWRITE_FONT_STYLE">DWRITE_FONT_STYLE</a>,
+    pub IsSymbolFont: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>,
+    pub GetFaceNames: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteLocalizedStrings.html" title="struct winapi::dwrite::IDWriteLocalizedStrings">IDWriteLocalizedStrings</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetInformationalStrings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="struct" href="../../winapi/dwrite/struct.DWRITE_INFORMATIONAL_STRING_ID.html" title="struct winapi::dwrite::DWRITE_INFORMATIONAL_STRING_ID">DWRITE_INFORMATIONAL_STRING_ID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteLocalizedStrings.html" title="struct winapi::dwrite::IDWriteLocalizedStrings">IDWriteLocalizedStrings</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetSimulations: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_SIMULATIONS.html" title="struct winapi::dwrite::DWRITE_FONT_SIMULATIONS">DWRITE_FONT_SIMULATIONS</a>,
+    pub GetMetrics: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_METRICS.html" title="struct winapi::dwrite::DWRITE_FONT_METRICS">DWRITE_FONT_METRICS</a>),
+    pub HasCharacter: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub CreateFontFace: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFontFace.html" title="struct winapi::dwrite::IDWriteFontFace">IDWriteFontFace</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/unknwnbase/struct.IUnknownVtbl.html" title="struct winapi::unknwnbase::IUnknownVtbl">IUnknownVtbl</a></code>
+                           </span></span><span id='structfield.GetFontFamily' class="structfield">
+                           <span id='GetFontFamily.v' class='invisible'>
+                           <code>GetFontFamily: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFontFamily.html" title="struct winapi::dwrite::IDWriteFontFamily">IDWriteFontFamily</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetWeight' class="structfield">
+                           <span id='GetWeight.v' class='invisible'>
+                           <code>GetWeight: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_WEIGHT.html" title="struct winapi::dwrite::DWRITE_FONT_WEIGHT">DWRITE_FONT_WEIGHT</a></code>
+                           </span></span><span id='structfield.GetStretch' class="structfield">
+                           <span id='GetStretch.v' class='invisible'>
+                           <code>GetStretch: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_STRETCH.html" title="struct winapi::dwrite::DWRITE_FONT_STRETCH">DWRITE_FONT_STRETCH</a></code>
+                           </span></span><span id='structfield.GetStyle' class="structfield">
+                           <span id='GetStyle.v' class='invisible'>
+                           <code>GetStyle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_STYLE.html" title="struct winapi::dwrite::DWRITE_FONT_STYLE">DWRITE_FONT_STYLE</a></code>
+                           </span></span><span id='structfield.IsSymbolFont' class="structfield">
+                           <span id='IsSymbolFont.v' class='invisible'>
+                           <code>IsSymbolFont: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a></code>
+                           </span></span><span id='structfield.GetFaceNames' class="structfield">
+                           <span id='GetFaceNames.v' class='invisible'>
+                           <code>GetFaceNames: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteLocalizedStrings.html" title="struct winapi::dwrite::IDWriteLocalizedStrings">IDWriteLocalizedStrings</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetInformationalStrings' class="structfield">
+                           <span id='GetInformationalStrings.v' class='invisible'>
+                           <code>GetInformationalStrings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="struct" href="../../winapi/dwrite/struct.DWRITE_INFORMATIONAL_STRING_ID.html" title="struct winapi::dwrite::DWRITE_INFORMATIONAL_STRING_ID">DWRITE_INFORMATIONAL_STRING_ID</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteLocalizedStrings.html" title="struct winapi::dwrite::IDWriteLocalizedStrings">IDWriteLocalizedStrings</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetSimulations' class="structfield">
+                           <span id='GetSimulations.v' class='invisible'>
+                           <code>GetSimulations: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>) -&gt; <a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_SIMULATIONS.html" title="struct winapi::dwrite::DWRITE_FONT_SIMULATIONS">DWRITE_FONT_SIMULATIONS</a></code>
+                           </span></span><span id='structfield.GetMetrics' class="structfield">
+                           <span id='GetMetrics.v' class='invisible'>
+                           <code>GetMetrics: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.DWRITE_FONT_METRICS.html" title="struct winapi::dwrite::DWRITE_FONT_METRICS">DWRITE_FONT_METRICS</a>)</code>
+                           </span></span><span id='structfield.HasCharacter' class="structfield">
+                           <span id='HasCharacter.v' class='invisible'>
+                           <code>HasCharacter: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.BOOL.html" title="type winapi::minwindef::BOOL">BOOL</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.CreateFontFace' class="structfield">
+                           <span id='CreateFontFace.v' class='invisible'>
+                           <code>CreateFontFace: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFont.html" title="struct winapi::dwrite::IDWriteFont">IDWriteFont</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/dwrite/struct.IDWriteFontFace.html" title="struct winapi::dwrite::IDWriteFontFace">IDWriteFontFace</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

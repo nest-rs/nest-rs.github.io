@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ID2D1StrokeStyleVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ID2D1StrokeStyleVtbl">
+
+    <title>winapi::d2d1::ID2D1StrokeStyleVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ID2D1StrokeStyleVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d2d1</a></p><script>window.sidebarCurrent = {name: 'ID2D1StrokeStyleVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d2d1</a>::<wbr><a class="struct" href=''>ID2D1StrokeStyleVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ID2D1StrokeStyleVtbl {
+    pub parent: <a class="struct" href="../../winapi/d2d1/struct.ID2D1ResourceVtbl.html" title="struct winapi::d2d1::ID2D1ResourceVtbl">ID2D1ResourceVtbl</a>,
+    pub GetStartCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a>,
+    pub GetEndCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a>,
+    pub GetDashCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a>,
+    pub GetMiterLimit: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a>,
+    pub GetLineJoin: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_LINE_JOIN.html" title="struct winapi::d2d1::D2D1_LINE_JOIN">D2D1_LINE_JOIN</a>,
+    pub GetDashOffset: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a>,
+    pub GetDashStyle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_DASH_STYLE.html" title="struct winapi::d2d1::D2D1_DASH_STYLE">D2D1_DASH_STYLE</a>,
+    pub GetDashesCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>,
+    pub GetDashes: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>),
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/d2d1/struct.ID2D1ResourceVtbl.html" title="struct winapi::d2d1::ID2D1ResourceVtbl">ID2D1ResourceVtbl</a></code>
+                           </span></span><span id='structfield.GetStartCap' class="structfield">
+                           <span id='GetStartCap.v' class='invisible'>
+                           <code>GetStartCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a></code>
+                           </span></span><span id='structfield.GetEndCap' class="structfield">
+                           <span id='GetEndCap.v' class='invisible'>
+                           <code>GetEndCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a></code>
+                           </span></span><span id='structfield.GetDashCap' class="structfield">
+                           <span id='GetDashCap.v' class='invisible'>
+                           <code>GetDashCap: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_CAP_STYLE.html" title="struct winapi::d2d1::D2D1_CAP_STYLE">D2D1_CAP_STYLE</a></code>
+                           </span></span><span id='structfield.GetMiterLimit' class="structfield">
+                           <span id='GetMiterLimit.v' class='invisible'>
+                           <code>GetMiterLimit: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a></code>
+                           </span></span><span id='structfield.GetLineJoin' class="structfield">
+                           <span id='GetLineJoin.v' class='invisible'>
+                           <code>GetLineJoin: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_LINE_JOIN.html" title="struct winapi::d2d1::D2D1_LINE_JOIN">D2D1_LINE_JOIN</a></code>
+                           </span></span><span id='structfield.GetDashOffset' class="structfield">
+                           <span id='GetDashOffset.v' class='invisible'>
+                           <code>GetDashOffset: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a></code>
+                           </span></span><span id='structfield.GetDashStyle' class="structfield">
+                           <span id='GetDashStyle.v' class='invisible'>
+                           <code>GetDashStyle: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="struct" href="../../winapi/d2d1/struct.D2D1_DASH_STYLE.html" title="struct winapi::d2d1::D2D1_DASH_STYLE">D2D1_DASH_STYLE</a></code>
+                           </span></span><span id='structfield.GetDashesCount' class="structfield">
+                           <span id='GetDashesCount.v' class='invisible'>
+                           <code>GetDashesCount: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>) -&gt; <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a></code>
+                           </span></span><span id='structfield.GetDashes' class="structfield">
+                           <span id='GetDashes.v' class='invisible'>
+                           <code>GetDashes: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d2d1/struct.ID2D1StrokeStyle.html" title="struct winapi::d2d1::ID2D1StrokeStyle">ID2D1StrokeStyle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/minwindef/type.FLOAT.html" title="type winapi::minwindef::FLOAT">FLOAT</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT32.html" title="type winapi::basetsd::UINT32">UINT32</a>)</code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

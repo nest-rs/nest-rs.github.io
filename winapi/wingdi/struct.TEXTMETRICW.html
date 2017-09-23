@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `TEXTMETRICW` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, TEXTMETRICW">
+
+    <title>winapi::wingdi::TEXTMETRICW - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct TEXTMETRICW</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>wingdi</a></p><script>window.sidebarCurrent = {name: 'TEXTMETRICW', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>wingdi</a>::<wbr><a class="struct" href=''>TEXTMETRICW</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#264-266' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct TEXTMETRICW {
+    pub tmHeight: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmAscent: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmDescent: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmInternalLeading: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmExternalLeading: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmAveCharWidth: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmMaxCharWidth: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmWeight: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmOverhang: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmDigitizedAspectX: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmDigitizedAspectY: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a>,
+    pub tmFirstChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a>,
+    pub tmLastChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a>,
+    pub tmDefaultChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a>,
+    pub tmBreakChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a>,
+    pub tmItalic: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>,
+    pub tmUnderlined: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>,
+    pub tmStruckOut: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>,
+    pub tmPitchAndFamily: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>,
+    pub tmCharSet: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.tmHeight' class="structfield">
+                           <span id='tmHeight.v' class='invisible'>
+                           <code>tmHeight: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmAscent' class="structfield">
+                           <span id='tmAscent.v' class='invisible'>
+                           <code>tmAscent: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmDescent' class="structfield">
+                           <span id='tmDescent.v' class='invisible'>
+                           <code>tmDescent: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmInternalLeading' class="structfield">
+                           <span id='tmInternalLeading.v' class='invisible'>
+                           <code>tmInternalLeading: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmExternalLeading' class="structfield">
+                           <span id='tmExternalLeading.v' class='invisible'>
+                           <code>tmExternalLeading: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmAveCharWidth' class="structfield">
+                           <span id='tmAveCharWidth.v' class='invisible'>
+                           <code>tmAveCharWidth: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmMaxCharWidth' class="structfield">
+                           <span id='tmMaxCharWidth.v' class='invisible'>
+                           <code>tmMaxCharWidth: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmWeight' class="structfield">
+                           <span id='tmWeight.v' class='invisible'>
+                           <code>tmWeight: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmOverhang' class="structfield">
+                           <span id='tmOverhang.v' class='invisible'>
+                           <code>tmOverhang: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmDigitizedAspectX' class="structfield">
+                           <span id='tmDigitizedAspectX.v' class='invisible'>
+                           <code>tmDigitizedAspectX: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmDigitizedAspectY' class="structfield">
+                           <span id='tmDigitizedAspectY.v' class='invisible'>
+                           <code>tmDigitizedAspectY: <a class="type" href="../../winapi/winnt/type.LONG.html" title="type winapi::winnt::LONG">LONG</a></code>
+                           </span></span><span id='structfield.tmFirstChar' class="structfield">
+                           <span id='tmFirstChar.v' class='invisible'>
+                           <code>tmFirstChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a></code>
+                           </span></span><span id='structfield.tmLastChar' class="structfield">
+                           <span id='tmLastChar.v' class='invisible'>
+                           <code>tmLastChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a></code>
+                           </span></span><span id='structfield.tmDefaultChar' class="structfield">
+                           <span id='tmDefaultChar.v' class='invisible'>
+                           <code>tmDefaultChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a></code>
+                           </span></span><span id='structfield.tmBreakChar' class="structfield">
+                           <span id='tmBreakChar.v' class='invisible'>
+                           <code>tmBreakChar: <a class="type" href="../../winapi/winnt/type.WCHAR.html" title="type winapi::winnt::WCHAR">WCHAR</a></code>
+                           </span></span><span id='structfield.tmItalic' class="structfield">
+                           <span id='tmItalic.v' class='invisible'>
+                           <code>tmItalic: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a></code>
+                           </span></span><span id='structfield.tmUnderlined' class="structfield">
+                           <span id='tmUnderlined.v' class='invisible'>
+                           <code>tmUnderlined: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a></code>
+                           </span></span><span id='structfield.tmStruckOut' class="structfield">
+                           <span id='tmStruckOut.v' class='invisible'>
+                           <code>tmStruckOut: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a></code>
+                           </span></span><span id='structfield.tmPitchAndFamily' class="structfield">
+                           <span id='tmPitchAndFamily.v' class='invisible'>
+                           <code>tmPitchAndFamily: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a></code>
+                           </span></span><span id='structfield.tmCharSet' class="structfield">
+                           <span id='tmCharSet.v' class='invisible'>
+                           <code>tmCharSet: <a class="type" href="../../winapi/minwindef/type.BYTE.html" title="type winapi::minwindef::BYTE">BYTE</a></code>
+                           </span></span>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../winapi/wingdi/struct.TEXTMETRICW.html" title="struct winapi::wingdi::TEXTMETRICW">TEXTMETRICW</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../winapi/wingdi/struct.TEXTMETRICW.html" title="struct winapi::wingdi::TEXTMETRICW">TEXTMETRICW</a></code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#267' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../winapi/wingdi/struct.TEXTMETRICW.html" title="struct winapi::wingdi::TEXTMETRICW">TEXTMETRICW</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../winapi/wingdi/struct.TEXTMETRICW.html" title="struct winapi::wingdi::TEXTMETRICW">TEXTMETRICW</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

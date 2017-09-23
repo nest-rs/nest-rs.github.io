@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ID3D12CommandQueueVtbl` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ID3D12CommandQueueVtbl">
+
+    <title>winapi::d3d12::ID3D12CommandQueueVtbl - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ID3D12CommandQueueVtbl</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d12</a></p><script>window.sidebarCurrent = {name: 'ID3D12CommandQueueVtbl', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d12</a>::<wbr><a class="struct" href=''>ID3D12CommandQueueVtbl</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#139-145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct ID3D12CommandQueueVtbl {
+    pub parent: <a class="struct" href="../../winapi/d3d12/struct.ID3D12PageableVtbl.html" title="struct winapi::d3d12::ID3D12PageableVtbl">ID3D12PageableVtbl</a>,
+    pub UpdateTileMappings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_REGION_SIZE.html" title="struct winapi::d3d12::D3D12_TILE_REGION_SIZE">D3D12_TILE_REGION_SIZE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Heap.html" title="struct winapi::d3d12::ID3D12Heap">ID3D12Heap</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_RANGE_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_RANGE_FLAGS">D3D12_TILE_RANGE_FLAGS</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_MAPPING_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_MAPPING_FLAGS">D3D12_TILE_MAPPING_FLAGS</a>),
+    pub CopyTileMappings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_REGION_SIZE.html" title="struct winapi::d3d12::D3D12_TILE_REGION_SIZE">D3D12_TILE_REGION_SIZE</a>, _: <a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_MAPPING_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_MAPPING_FLAGS">D3D12_TILE_MAPPING_FLAGS</a>),
+    pub ExecuteCommandLists: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandList.html" title="struct winapi::d3d12::ID3D12CommandList">ID3D12CommandList</a>),
+    pub SetMarker: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>),
+    pub BeginEvent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>),
+    pub EndEvent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>),
+    pub Signal: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Fence.html" title="struct winapi::d3d12::ID3D12Fence">ID3D12Fence</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub Wait: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Fence.html" title="struct winapi::d3d12::ID3D12Fence">ID3D12Fence</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetTimestampFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetClockCalibration: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a>,
+    pub GetDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_COMMAND_QUEUE_DESC.html" title="struct winapi::d3d12::D3D12_COMMAND_QUEUE_DESC">D3D12_COMMAND_QUEUE_DESC</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_COMMAND_QUEUE_DESC.html" title="struct winapi::d3d12::D3D12_COMMAND_QUEUE_DESC">D3D12_COMMAND_QUEUE_DESC</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.parent' class="structfield">
+                           <span id='parent.v' class='invisible'>
+                           <code>parent: <a class="struct" href="../../winapi/d3d12/struct.ID3D12PageableVtbl.html" title="struct winapi::d3d12::ID3D12PageableVtbl">ID3D12PageableVtbl</a></code>
+                           </span></span><span id='structfield.UpdateTileMappings' class="structfield">
+                           <span id='UpdateTileMappings.v' class='invisible'>
+                           <code>UpdateTileMappings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_REGION_SIZE.html" title="struct winapi::d3d12::D3D12_TILE_REGION_SIZE">D3D12_TILE_REGION_SIZE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Heap.html" title="struct winapi::d3d12::ID3D12Heap">ID3D12Heap</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_RANGE_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_RANGE_FLAGS">D3D12_TILE_RANGE_FLAGS</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_MAPPING_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_MAPPING_FLAGS">D3D12_TILE_MAPPING_FLAGS</a>)</code>
+                           </span></span><span id='structfield.CopyTileMappings' class="structfield">
+                           <span id='CopyTileMappings.v' class='invisible'>
+                           <code>CopyTileMappings: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Resource.html" title="struct winapi::d3d12::ID3D12Resource">ID3D12Resource</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILED_RESOURCE_COORDINATE.html" title="struct winapi::d3d12::D3D12_TILED_RESOURCE_COORDINATE">D3D12_TILED_RESOURCE_COORDINATE</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_REGION_SIZE.html" title="struct winapi::d3d12::D3D12_TILE_REGION_SIZE">D3D12_TILE_REGION_SIZE</a>, _: <a class="struct" href="../../winapi/d3d12/struct.D3D12_TILE_MAPPING_FLAGS.html" title="struct winapi::d3d12::D3D12_TILE_MAPPING_FLAGS">D3D12_TILE_MAPPING_FLAGS</a>)</code>
+                           </span></span><span id='structfield.ExecuteCommandLists' class="structfield">
+                           <span id='ExecuteCommandLists.v' class='invisible'>
+                           <code>ExecuteCommandLists: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandList.html" title="struct winapi::d3d12::ID3D12CommandList">ID3D12CommandList</a>)</code>
+                           </span></span><span id='structfield.SetMarker' class="structfield">
+                           <span id='SetMarker.v' class='invisible'>
+                           <code>SetMarker: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>)</code>
+                           </span></span><span id='structfield.BeginEvent' class="structfield">
+                           <span id='BeginEvent.v' class='invisible'>
+                           <code>BeginEvent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="enum" href="../../winapi/enum.c_void.html" title="enum winapi::c_void">c_void</a>, _: <a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a>)</code>
+                           </span></span><span id='structfield.EndEvent' class="structfield">
+                           <span id='EndEvent.v' class='invisible'>
+                           <code>EndEvent: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>)</code>
+                           </span></span><span id='structfield.Signal' class="structfield">
+                           <span id='Signal.v' class='invisible'>
+                           <code>Signal: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Fence.html" title="struct winapi::d3d12::ID3D12Fence">ID3D12Fence</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.Wait' class="structfield">
+                           <span id='Wait.v' class='invisible'>
+                           <code>Wait: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12Fence.html" title="struct winapi::d3d12::ID3D12Fence">ID3D12Fence</a>, _: <a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetTimestampFrequency' class="structfield">
+                           <span id='GetTimestampFrequency.v' class='invisible'>
+                           <code>GetTimestampFrequency: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetClockCalibration' class="structfield">
+                           <span id='GetClockCalibration.v' class='invisible'>
+                           <code>GetClockCalibration: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../../winapi/basetsd/type.UINT64.html" title="type winapi::basetsd::UINT64">UINT64</a>) -&gt; <a class="type" href="../../winapi/winerror/type.HRESULT.html" title="type winapi::winerror::HRESULT">HRESULT</a></code>
+                           </span></span><span id='structfield.GetDesc' class="structfield">
+                           <span id='GetDesc.v' class='invisible'>
+                           <code>GetDesc: unsafe extern &quot;system&quot; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.ID3D12CommandQueue.html" title="struct winapi::d3d12::ID3D12CommandQueue">ID3D12CommandQueue</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_COMMAND_QUEUE_DESC.html" title="struct winapi::d3d12::D3D12_COMMAND_QUEUE_DESC">D3D12_COMMAND_QUEUE_DESC</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../../winapi/d3d12/struct.D3D12_COMMAND_QUEUE_DESC.html" title="struct winapi::d3d12::D3D12_COMMAND_QUEUE_DESC">D3D12_COMMAND_QUEUE_DESC</a></code>
+                           </span></span></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

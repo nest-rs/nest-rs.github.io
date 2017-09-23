@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `D3D11_SHADER_RESOURCE_VIEW_DESC` struct in crate `winapi`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, D3D11_SHADER_RESOURCE_VIEW_DESC">
+
+    <title>winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct D3D11_SHADER_RESOURCE_VIEW_DESC</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d11</a></p><script>window.sidebarCurrent = {name: 'D3D11_SHADER_RESOURCE_VIEW_DESC', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>winapi</a>::<wbr><a href='index.html'>d3d11</a>::<wbr><a class="struct" href=''>D3D11_SHADER_RESOURCE_VIEW_DESC</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/winapi/macros.rs.html#264-266' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct D3D11_SHADER_RESOURCE_VIEW_DESC {
+    pub Format: <a class="struct" href="../../winapi/dxgiformat/struct.DXGI_FORMAT.html" title="struct winapi::dxgiformat::DXGI_FORMAT">DXGI_FORMAT</a>,
+    pub ViewDimension: <a class="type" href="../../winapi/d3d11/type.D3D11_SRV_DIMENSION.html" title="type winapi::d3d11::D3D11_SRV_DIMENSION">D3D11_SRV_DIMENSION</a>,
+    pub u: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.Format' class="structfield">
+                           <span id='Format.v' class='invisible'>
+                           <code>Format: <a class="struct" href="../../winapi/dxgiformat/struct.DXGI_FORMAT.html" title="struct winapi::dxgiformat::DXGI_FORMAT">DXGI_FORMAT</a></code>
+                           </span></span><span id='structfield.ViewDimension' class="structfield">
+                           <span id='ViewDimension.v' class='invisible'>
+                           <code>ViewDimension: <a class="type" href="../../winapi/d3d11/type.D3D11_SRV_DIMENSION.html" title="type winapi::d3d11::D3D11_SRV_DIMENSION">D3D11_SRV_DIMENSION</a></code>
+                           </span></span><span id='structfield.u' class="structfield">
+                           <span id='u.v' class='invisible'>
+                           <code>u: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="type" href="../../winapi/minwindef/type.UINT.html" title="type winapi::minwindef::UINT">UINT</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a></code>
+                           </span></span>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Buffer' class="method"><span id='Buffer.v' class='invisible'><code>unsafe fn <a href='#method.Buffer' class='fnname'>Buffer</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_BUFFER_SRV.html" title="struct winapi::d3d11::D3D11_BUFFER_SRV">D3D11_BUFFER_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Buffer_mut' class="method"><span id='Buffer_mut.v' class='invisible'><code>unsafe fn <a href='#method.Buffer_mut' class='fnname'>Buffer_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_BUFFER_SRV.html" title="struct winapi::d3d11::D3D11_BUFFER_SRV">D3D11_BUFFER_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-1' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-1' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture1D' class="method"><span id='Texture1D.v' class='invisible'><code>unsafe fn <a href='#method.Texture1D' class='fnname'>Texture1D</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX1D_SRV.html" title="struct winapi::d3d11::D3D11_TEX1D_SRV">D3D11_TEX1D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture1D_mut' class="method"><span id='Texture1D_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture1D_mut' class='fnname'>Texture1D_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX1D_SRV.html" title="struct winapi::d3d11::D3D11_TEX1D_SRV">D3D11_TEX1D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-2' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-2' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture1DArray' class="method"><span id='Texture1DArray.v' class='invisible'><code>unsafe fn <a href='#method.Texture1DArray' class='fnname'>Texture1DArray</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX1D_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX1D_ARRAY_SRV">D3D11_TEX1D_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture1DArray_mut' class="method"><span id='Texture1DArray_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture1DArray_mut' class='fnname'>Texture1DArray_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX1D_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX1D_ARRAY_SRV">D3D11_TEX1D_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-3' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-3' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture2D' class="method"><span id='Texture2D.v' class='invisible'><code>unsafe fn <a href='#method.Texture2D' class='fnname'>Texture2D</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2D_SRV.html" title="struct winapi::d3d11::D3D11_TEX2D_SRV">D3D11_TEX2D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture2D_mut' class="method"><span id='Texture2D_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture2D_mut' class='fnname'>Texture2D_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2D_SRV.html" title="struct winapi::d3d11::D3D11_TEX2D_SRV">D3D11_TEX2D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-4' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-4' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture2DArray' class="method"><span id='Texture2DArray.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DArray' class='fnname'>Texture2DArray</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2D_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX2D_ARRAY_SRV">D3D11_TEX2D_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture2DArray_mut' class="method"><span id='Texture2DArray_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DArray_mut' class='fnname'>Texture2DArray_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2D_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX2D_ARRAY_SRV">D3D11_TEX2D_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-5' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-5' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture2DMS' class="method"><span id='Texture2DMS.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DMS' class='fnname'>Texture2DMS</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2DMS_SRV.html" title="struct winapi::d3d11::D3D11_TEX2DMS_SRV">D3D11_TEX2DMS_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture2DMS_mut' class="method"><span id='Texture2DMS_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DMS_mut' class='fnname'>Texture2DMS_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2DMS_SRV.html" title="struct winapi::d3d11::D3D11_TEX2DMS_SRV">D3D11_TEX2DMS_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-6' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-6' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture2DMSArray' class="method"><span id='Texture2DMSArray.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DMSArray' class='fnname'>Texture2DMSArray</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2DMS_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX2DMS_ARRAY_SRV">D3D11_TEX2DMS_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture2DMSArray_mut' class="method"><span id='Texture2DMSArray_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture2DMSArray_mut' class='fnname'>Texture2DMSArray_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX2DMS_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEX2DMS_ARRAY_SRV">D3D11_TEX2DMS_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-7' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-7' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.Texture3D' class="method"><span id='Texture3D.v' class='invisible'><code>unsafe fn <a href='#method.Texture3D' class='fnname'>Texture3D</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX3D_SRV.html" title="struct winapi::d3d11::D3D11_TEX3D_SRV">D3D11_TEX3D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.Texture3D_mut' class="method"><span id='Texture3D_mut.v' class='invisible'><code>unsafe fn <a href='#method.Texture3D_mut' class='fnname'>Texture3D_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEX3D_SRV.html" title="struct winapi::d3d11::D3D11_TEX3D_SRV">D3D11_TEX3D_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-8' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-8' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.TextureCube' class="method"><span id='TextureCube.v' class='invisible'><code>unsafe fn <a href='#method.TextureCube' class='fnname'>TextureCube</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEXCUBE_SRV.html" title="struct winapi::d3d11::D3D11_TEXCUBE_SRV">D3D11_TEXCUBE_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.TextureCube_mut' class="method"><span id='TextureCube_mut.v' class='invisible'><code>unsafe fn <a href='#method.TextureCube_mut' class='fnname'>TextureCube_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEXCUBE_SRV.html" title="struct winapi::d3d11::D3D11_TEXCUBE_SRV">D3D11_TEXCUBE_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-9' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-9' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.TextureCubeArray' class="method"><span id='TextureCubeArray.v' class='invisible'><code>unsafe fn <a href='#method.TextureCubeArray' class='fnname'>TextureCubeArray</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_TEXCUBE_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEXCUBE_ARRAY_SRV">D3D11_TEXCUBE_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.TextureCubeArray_mut' class="method"><span id='TextureCubeArray_mut.v' class='invisible'><code>unsafe fn <a href='#method.TextureCubeArray_mut' class='fnname'>TextureCubeArray_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_TEXCUBE_ARRAY_SRV.html" title="struct winapi::d3d11::D3D11_TEXCUBE_ARRAY_SRV">D3D11_TEXCUBE_ARRAY_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-10' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-10' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#173-182' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.BufferEx' class="method"><span id='BufferEx.v' class='invisible'><code>unsafe fn <a href='#method.BufferEx' class='fnname'>BufferEx</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../winapi/d3d11/struct.D3D11_BUFFEREX_SRV.html" title="struct winapi::d3d11::D3D11_BUFFEREX_SRV">D3D11_BUFFEREX_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#175-177' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.BufferEx_mut' class="method"><span id='BufferEx_mut.v' class='invisible'><code>unsafe fn <a href='#method.BufferEx_mut' class='fnname'>BufferEx_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../winapi/d3d11/struct.D3D11_BUFFEREX_SRV.html" title="struct winapi::d3d11::D3D11_BUFFEREX_SRV">D3D11_BUFFEREX_SRV</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#179-181' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#263' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#267' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../winapi/d3d11/struct.D3D11_SHADER_RESOURCE_VIEW_DESC.html" title="struct winapi::d3d11::D3D11_SHADER_RESOURCE_VIEW_DESC">D3D11_SHADER_RESOURCE_VIEW_DESC</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/winapi/macros.rs.html#268' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "winapi";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

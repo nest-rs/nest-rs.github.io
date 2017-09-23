@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Color` struct in crate `nest`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Color">
+
+    <title>nest::Color - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Color</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>nest</a></p><script>window.sidebarCurrent = {name: 'Color', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>nest</a>::<wbr><a class="struct" href=''>Color</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/nest/color.rs.html#8' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Color(pub <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>);</pre><div class='docblock'><p>Color in <code>(red, green, blue, alpha)</code> tuple form.</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#10-48' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.scale' class="method"><span id='scale.v' class='invisible'><code>fn <a href='#method.scale' class='fnname'>scale</a>(self, factor: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#12-14' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Scale the brightness of the color</p>
+</div><h4 id='method.alpha' class="method"><span id='alpha.v' class='invisible'><code>fn <a href='#method.alpha' class='fnname'>alpha</a>(self, factor: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#17-19' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Scale the brightness of the color</p>
+</div><h4 id='method.multiply' class="method"><span id='multiply.v' class='invisible'><code>fn <a href='#method.multiply' class='fnname'>multiply</a>&lt;C:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a>&gt;&gt;(self, other: C) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#22-30' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Multiply the colors together (scale every component by each other)</p>
+</div><h4 id='associatedconstant.WHITE' class="associatedconstant"><span id='WHITE.v' class='invisible'><code>const <a href='#associatedconstant.WHITE' class="constant"><b>WHITE</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">WHITE</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.YELLOW' class="associatedconstant"><span id='YELLOW.v' class='invisible'><code>const <a href='#associatedconstant.YELLOW' class="constant"><b>YELLOW</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">YELLOW</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.MAGENTA' class="associatedconstant"><span id='MAGENTA.v' class='invisible'><code>const <a href='#associatedconstant.MAGENTA' class="constant"><b>MAGENTA</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">MAGENTA</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.CYAN' class="associatedconstant"><span id='CYAN.v' class='invisible'><code>const <a href='#associatedconstant.CYAN' class="constant"><b>CYAN</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">CYAN</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.RED' class="associatedconstant"><span id='RED.v' class='invisible'><code>const <a href='#associatedconstant.RED' class="constant"><b>RED</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">RED</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.GREEN' class="associatedconstant"><span id='GREEN.v' class='invisible'><code>const <a href='#associatedconstant.GREEN' class="constant"><b>GREEN</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">GREEN</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.BLUE' class="associatedconstant"><span id='BLUE.v' class='invisible'><code>const <a href='#associatedconstant.BLUE' class="constant"><b>BLUE</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">BLUE</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>])</pre>
+</div><h4 id='associatedconstant.BLACK' class="associatedconstant"><span id='BLACK.v' class='invisible'><code>const <a href='#associatedconstant.BLACK' class="constant"><b>BLACK</b></a>: <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span></h4>
+<div class='docblock'><pre class="rust ">
+<span class="ident">BLACK</span>: <span class="ident">Color</span> <span class="op">=</span> <span class="ident">Color</span>([<span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">0.0</span>, <span class="number">1.0</span>])</pre>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#7' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#7' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#7' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-AsUniformValue' class='impl'><span class='in-band'><code>impl <a class="trait" href="../glium/uniforms/trait.AsUniformValue.html" title="trait glium::uniforms::AsUniformValue">AsUniformValue</a> for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-AsUniformValue' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#50-54' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.as_uniform_value' class="method"><span id='as_uniform_value.v' class='invisible'><code>fn <a href='../glium/uniforms/trait.AsUniformValue.html#tymethod.as_uniform_value' class='fnname'>as_uniform_value</a>(&amp;self) -&gt; <a class="enum" href="../glium/uniforms/value/enum.UniformValue.html" title="enum glium::uniforms::value::UniformValue">UniformValue</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#51-53' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Builds a <code>UniformValue</code>.</p>
+</div></div><h3 id='impl-From&lt;(u8, u8, u8, u8)&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>&gt; for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-From&lt;(u8, u8, u8, u8)&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#56-65' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from' class="method"><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(tup: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#57-64' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-From&lt;[u8; 4]&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>&gt; for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-From&lt;[u8; 4]&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#67-76' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-1' class="method"><span id='from.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(arr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#68-75' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-From&lt;(f32, f32, f32, f32)&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>&gt; for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-From&lt;(f32, f32, f32, f32)&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#78-82' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-2' class="method"><span id='from.v-2' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(tup: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#79-81' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-From&lt;[f32; 4]&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>&gt; for <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code><a href='#impl-From&lt;[f32; 4]&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#84-88' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from-3' class="method"><span id='from.v-3' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(arr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a>) -&gt; <a class="struct" href="../nest/struct.Color.html" title="struct nest::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/nest/color.rs.html#85-87' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "nest";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

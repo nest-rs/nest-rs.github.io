@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `nest` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, nest">
+
+    <title>nest - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate nest</p><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'nest', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>nest</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/nest/lib.rs.html#1-50' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Nest is a crate to start protyping and making 2d graphics with as little effort as possible.
+It&#39;s powerful combinators assist in making ordered transformations on different levels to
+build larger and larger shapes.</p>
+
+<p>This library does perform well, but not as well as rendering manually with custom shaders.
+For almost any 2d application this performance will be sufficient, but this library is not designed
+for high-performance drawing. If you are drawing more than a million polygons per frame, you may not
+want to use this library, but profile as desired. We are still committed to improving the performance given our
+API as much as possible.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<pre class="rust rust-example-rendered">
+<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">nest</span>;
+<span class="kw">use</span> <span class="ident">nest</span>::<span class="kw-2">*</span>;
+ 
+<span class="kw">fn</span> <span class="ident">main</span>() {
+    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">app</span> <span class="op">=</span> <span class="ident">Window</span>::<span class="ident">new</span>(<span class="string">&quot;Example&quot;</span>, <span class="number">640</span>, <span class="number">480</span>).<span class="ident">expect</span>(<span class="string">&quot;error: failed to open window&quot;</span>);
+ 
+    <span class="kw">while</span> <span class="op">!</span><span class="ident">app</span>.<span class="ident">poll_events</span>().<span class="ident">any</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> <span class="ident">e</span> <span class="op">==</span> <span class="ident">Event</span>::<span class="ident">Closed</span>) {
+        <span class="ident">app</span>.<span class="ident">draw</span>(<span class="ident">rect</span>([<span class="op">-</span><span class="number">0.5</span>, <span class="op">-</span><span class="number">0.5</span>], [<span class="number">0.5</span>, <span class="number">0.5</span>]).<span class="ident">translate</span>((<span class="op">-</span><span class="number">0.1</span>, <span class="op">-</span><span class="number">0.1</span>)).<span class="ident">combine</span>(
+            <span class="ident">rect</span>([<span class="op">-</span><span class="number">0.8</span>, <span class="op">-</span><span class="number">0.8</span>], [<span class="number">0.3</span>, <span class="number">0.3</span>])).<span class="ident">translate</span>([<span class="number">0.1</span>, <span class="number">0.1</span>]).<span class="ident">rotate</span>(<span class="number">0.5</span>));
+    }
+}</pre>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="error/index.html"
+                                  title='mod nest::error'>error</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Color.html"
+                                  title='struct nest::Color'>Color</a></td>
+                           <td class='docblock-short'>
+                                <p>Color in <code>(red, green, blue, alpha)</code> tuple form.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Combine.html"
+                                  title='struct nest::Combine'>Combine</a></td>
+                           <td class='docblock-short'>
+                                <p><code>Combine</code> represents the combination of two shapes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Error.html"
+                                  title='struct nest::Error'>Error</a></td>
+                           <td class='docblock-short'>
+                                <p>The Error type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Frame.html"
+                                  title='struct nest::Frame'>Frame</a></td>
+                           <td class='docblock-short'>
+                                <p><code>Frame</code> can be used to make multiple separate draw calls in one frame. When it drops/exits scope,
+it automatically updates the window with the frame, but it can also be finished by calling the method <code>finish()</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Positions.html"
+                                  title='struct nest::Positions'>Positions</a></td>
+                           <td class='docblock-short'>
+                                <p>Three positions which form a matrix for shader purposes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rect.html"
+                                  title='struct nest::Rect'>Rect</a></td>
+                           <td class='docblock-short'>
+                                <p>Two points make a rectangle.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RendTri.html"
+                                  title='struct nest::RendTri'>RendTri</a></td>
+                           <td class='docblock-short'>
+                                <p>Renderable triangle which includes color and texture information.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rotate.html"
+                                  title='struct nest::Rotate'>Rotate</a></td>
+                           <td class='docblock-short'>
+                                <p><code>Rotate</code> represents a shape which has been rotated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RotateIter.html"
+                                  title='struct nest::RotateIter'>RotateIter</a></td>
+                           <td class='docblock-short'>
+                                <p>Iterator which is produced by <code>Rotate</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Translate.html"
+                                  title='struct nest::Translate'>Translate</a></td>
+                           <td class='docblock-short'>
+                                <p><code>Translate</code> represents a shape which has been translated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TranslateIter.html"
+                                  title='struct nest::TranslateIter'>TranslateIter</a></td>
+                           <td class='docblock-short'>
+                                <p>Iterator which is produced by <code>Translate</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tri.html"
+                                  title='struct nest::Tri'>Tri</a></td>
+                           <td class='docblock-short'>
+                                <p>A triangle primitive which enters the shader pipeline as a single vertex and is the only primitive in nest</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Window.html"
+                                  title='struct nest::Window'>Window</a></td>
+                           <td class='docblock-short'>
+                                <p>Represets a window with OpenGL context.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ErrorKind.html"
+                                  title='enum nest::ErrorKind'>ErrorKind</a></td>
+                           <td class='docblock-short'>
+                                <p>The kind of an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.Event.html"
+                                  title='enum nest::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents events passed form <code>Window</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.Key.html"
+                                  title='enum nest::Key'>Key</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.KeyState.html"
+                                  title='enum nest::KeyState'>KeyState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.ResultExt.html"
+                                  title='trait nest::ResultExt'>ResultExt</a></td>
+                           <td class='docblock-short'>
+                                <p>Additional methods for <code>Result</code>, for easy interaction with this crate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.Shape.html"
+                                  title='trait nest::Shape'>Shape</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait for structs to be drawn with <code>Frame::draw</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.ToSeconds.html"
+                                  title='trait nest::ToSeconds'>ToSeconds</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait for things which can be converted into seconds. This should not be used for high-precision accuracy.</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.rect.html"
+                                  title='fn nest::rect'>rect</a></td>
+                           <td class='docblock-short'>
+                                <p>Takes two points and creates a rectangle from those two points.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Result.html"
+                                  title='type nest::Result'>Result</a></td>
+                           <td class='docblock-short'>
+                                <p>Convenient wrapper around <code>std::Result</code>.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "nest";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
